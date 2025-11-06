@@ -1017,7 +1017,7 @@ export default function BankChatbot() {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-20 right-4 md:bottom-6 z-50">
       {!isOpen && (
         <Button variant="outline" size="icon" className="rounded-full bg-transparent" onClick={() => setIsOpen(true)}>
           <MessageCircle className="h-5 md:h-6 w-5 md:w-6" />
@@ -1025,7 +1025,7 @@ export default function BankChatbot() {
       )}
 
       {isOpen && (
-        <Card className="fixed bottom-4 right-4 md:bottom-6 md:right-6 w-[calc(100vw-2rem)] md:w-96 h-[calc(100vh-6rem)] md:h-screen flex flex-col overflow-hidden">
+        <Card className="fixed bottom-20 right-4 md:bottom-6 md:right-6 w-[calc(100vw-2rem)] md:w-96 h-[calc(100vh-6rem)] md:h-screen flex flex-col overflow-hidden">
           <div className="p-2.5 md:p-4 bg-primary text-white flex justify-between items-center gap-2">
             <h2 className="text-base md:text-lg font-semibold">Bank Assistant</h2>
             <div className="flex items-center gap-1.5 md:gap-2">

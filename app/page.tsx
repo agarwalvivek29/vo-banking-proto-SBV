@@ -29,7 +29,7 @@ export default function Home() {
       <SimpleHeader onQRClick={() => setShowAccountQR(true)} />
       <div className="flex flex-1 overflow-hidden flex-col md:flex-row">
         <SimpleSidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-        <main className="flex-1 overflow-auto">
+        <main className="flex-1 overflow-auto pb-20 md:pb-0">
           {activeTab === "dashboard" && <SimpleDashboard />}
           {activeTab === "transfers" && <SimpleTransfers />}
           {activeTab === "transactions" && <SimpleTransactions />}
