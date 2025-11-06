@@ -9,7 +9,6 @@ import SimpleDashboard from "@/components/simple-dashboard"
 import SimpleTransfers from "@/components/simple-transfers"
 import SimpleTransactions from "@/components/simple-transactions"
 import SimpleBills from "@/components/simple-bills"
-import BankChatbot from "@/components/bank-chatbot"
 import FullScreenChatbot from "@/components/full-screen-chatbot"
 import QRScanner from "@/components/qr-scanner"
 import AccountQRDisplay from "@/components/account-qr-display"
@@ -17,7 +16,7 @@ import { MoneyRequests } from "@/components/money-requests"
 
 export default function Home() {
   const { user } = useAuth()
-  const [activeTab, setActiveTab] = useState("dashboard")
+  const [activeTab, setActiveTab] = useState("chat")
   const [showQRScanner, setShowQRScanner] = useState(false)
   const [showAccountQR, setShowAccountQR] = useState(false)
 
@@ -63,7 +62,6 @@ export default function Home() {
       </div>
       <QRScanner isOpen={showQRScanner} onClose={() => setShowQRScanner(false)} />
       <AccountQRDisplay isOpen={showAccountQR} onClose={() => setShowAccountQR(false)} accountNumber="9876543210" />
-      <BankChatbot />
     </div>
   )
 }

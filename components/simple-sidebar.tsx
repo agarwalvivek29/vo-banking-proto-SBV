@@ -16,7 +16,7 @@ const tabConfig: { [key: string]: { icon: string; label: string } } = {
 }
 
 export default function SimpleSidebar({ activeTab, setActiveTab }: SimpleSidebarProps) {
-  const tabs = ["dashboard", "transfers", "transactions", "bills", "requests", "qr", "chat"]
+  const tabs = ["chat", "dashboard", "transfers", "transactions", "bills", "requests", "qr"]
 
   return (
     <>
